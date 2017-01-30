@@ -1,3 +1,5 @@
+/* Mobile first design should start at 320px */
+
 h1 {
 	font-size: 2em;
 	font-family: 'Open Sans', sans-serif;
@@ -42,7 +44,26 @@ h1 {
 /*	background-size: cover;*/
 }
 
+#skills {
+	background-color: azure;
+}
+
 .skill {
 	border: 1px solid purple;
 	display: inline-block;
+}
+
+#projects {
+	background-color: lavender;
+}
+
+.project {
+	border: 1px solid red;
+	min-height: 100px;
+	min-width: 100px;
+	display: inline-block;
+}
+
+#contact {
+	background-color: lemonchiffon;
 }
