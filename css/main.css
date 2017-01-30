@@ -1,6 +1,12 @@
+h1 {
+	font-size: 2em;
+	font-family: 'Open Sans', sans-serif;
+	color: #412c27;
+}
+
 #header-name {
 	font-family: 'Pacifico';
-	font-size: 2em;
+	font-size: 2.5em;
 	color: #fee07e;
 	background-color: #412c27;
 	display: inline-block;
@@ -34,4 +40,9 @@
 	-webkit-background-size: cover;
 */
 /*	background-size: cover;*/
+}
+
+.skill {
+	border: 1px solid purple;
+	display: inline-block;
 }
