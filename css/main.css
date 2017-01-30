@@ -67,3 +67,8 @@ h1 {
 #contact {
 	background-color: lemonchiffon;
 }
+
+.social-media {
+	display: inline-block;
+	border: 1px solid orange;
+}
