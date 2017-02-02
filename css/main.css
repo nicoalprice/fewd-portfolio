@@ -6,12 +6,26 @@ h1 {
 	color: #412c27;
 }
 
+#logo-background {
+	display: inline-block;
+	background-color: #412c27;
+	position: relative;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%);
+	border-radius: 10px;
+	width: 300px;
+	height: 60px;
+}
+
 #header-name {
+	position: relative;
 	font-family: 'Pacifico';
 	font-size: 2.5em;
 	color: #fee07e;
-	background-color: #412c27;
 	display: inline-block;
+	text-shadow: 1px 1px 2px #000, 0 0 0 #000, -1px -1px 2px #000;
+	margin-left: 50px;
+	margin-top: 8px;
 }
 
 #container {
