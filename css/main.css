@@ -1,4 +1,12 @@
-/* Mobile first design should start at 320px */
+/* General */
+
+* {
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
 
 h1 {
 	font-size: 2em;
@@ -6,26 +14,43 @@ h1 {
 	color: #412c27;
 }
 
-#logo-background {
+/* Mobile first design should start at 320px */
+
+/* Navigation */
+
+#main-header {
+	display: flex;
+	flex-direction: column;
+}
+
+#menu li {
+	background: yellow;
 	display: inline-block;
+	width: 80px;
+	border-radius: 2px;
+	padding: 2px;
+	margin: 2px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#logo {
+	border: 1px solid green;
+	height: 60px;
 	background-color: #412c27;
-	position: relative;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%);
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 100%);
 	border-radius: 10px;
 	width: 300px;
 	height: 60px;
 }
 
-#header-name {
-	position: relative;
+.header-name {
+	width: 100%;
 	font-family: 'Pacifico';
 	font-size: 2.5em;
 	color: #fee07e;
-	display: inline-block;
 	text-shadow: 1px 1px 2px #000, 0 0 0 #000, -1px -1px 2px #000;
-	margin-left: 50px;
-	margin-top: 8px;
 }
 
 #container {
@@ -48,14 +73,6 @@ h1 {
 	opacity: 0.6;
 	background-image: url('../img/foliage-background.jpg');
 	background-repeat: no-repeat;
-/*	background-position: 50% 0;*/
-/*
-	-ms-background-size: cover;
-	-o-background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
-*/
-/*	background-size: cover;*/
 }
 
 #skills {
@@ -69,13 +86,35 @@ h1 {
 
 #projects {
 	background-color: lavender;
+	display: flex;
 }
 
 .project {
 	border: 1px solid red;
 	min-height: 100px;
 	min-width: 100px;
+	max-width: 90%;
+	margin: auto;
 	display: inline-block;
+}
+
+.project-title {
+	font-size: 1.2em;
+}
+
+.project-image img {
+	max-width: 90%;
+	margin: auto;
+	border-radius: 3px;
+}
+
+.project-skills {
+	background: pink;
+	display: inline-block;
+	border-radius: 4px;
+	padding: 4px;
+	margin: 2px;
+
 }
 
 #contact {
@@ -85,4 +124,14 @@ h1 {
 .social-media {
 	display: inline-block;
 	border: 1px solid orange;
+}
+/* ----- MEDIA QUERIES ----- */
+
+@media screen and (min-width: 769px) {
+
+	#main-header,
+	#menu {
+		display: flex;
+		flex-direction: row;
+	}
 }
