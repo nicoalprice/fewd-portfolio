@@ -90,22 +90,44 @@ a {
 }
 
 .skill {
-	border: 1px solid purple;
 	display: inline-block;
+	max-width: 700px;
+	background-color: white;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.skill img {
+	border-radius: 4px;
+	width: 100%;
+}
+
+.skill-name {
+	font-size: 1.2em;
+	padding: 4px;
+	font-weight: 600;
+}
+
+.skill-description {
+	font-size: 1em;
+	padding: 4px;
 }
 
 #projects {
 	background-color: lavender;
 	display: flex;
+	flex-direction: column;
+	max-width: 700px;
 }
 
 .project {
-	border: 1px solid red;
 	min-height: 100px;
 	min-width: 100px;
-	max-width: 90%;
 	margin: auto;
 	display: inline-block;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: white;
 }
 
 .project-title {
@@ -113,9 +135,9 @@ a {
 }
 
 .project-image img {
-	max-width: 90%;
+	max-width: 100%;
 	margin: auto;
-	border-radius: 3px;
+	border-radius: 4px;
 }
 
 .project-skills {
