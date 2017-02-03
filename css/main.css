@@ -26,6 +26,10 @@ header {
 	height: 400px;
 	width: 100%;
 }
+
+.wrapper {
+	border: 5px solid aqua;
+}
 /* Navigation */
 
 #main-header,
@@ -76,35 +80,6 @@ a {
 	opacity: 1;
 	z-index: 1;
 }
-/*
-
-#container {
-	display: block;
-	position: relative;
-	overflow: hidden;
-	background-color: green;
-	background-image: url('../img/foliage-background.jpg');
-	background-repeat: no-repeat;
-	height: 400px;
-}
-*/
-/* For decreasing background image opacity */
-
-/*
-#container::after {
-	content: "";
-	display: block;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	width: 100%;
-	z-index: -1;
-	opacity: 0.6;
-	background-image: url('../img/foliage-background.jpg');
-	background-repeat: no-repeat;
-*/
-/*}*/
 
 #bio {
 	opacity: .9;
@@ -149,11 +124,16 @@ a {
 	padding: 4px;
 }
 
+/* -- Projects ---*/
+
 #projects {
 	background-color: lavender;
+	width: 100%;
+}
+
+#projects-container {
 	display: flex;
 	flex-direction: column;
-/*	max-width: 700px;*/
 }
 
 #projects h1 {
@@ -165,7 +145,6 @@ a {
 	min-height: 100px;
 	min-width: 100px;
 	margin: auto;
-	display: inline-block;
 	padding: 10px;
 	margin-bottom: 10px;
 	background-color: white;
@@ -194,8 +173,9 @@ a {
 	border-radius: 4px;
 	padding: 4px;
 	margin: 2px;
-
 }
+
+/* --- Footer --- */
 
 #contact {
 	background-color: lemonchiffon;
@@ -223,18 +203,26 @@ a {
 		width: 50%;
 	}
 
-
-	#projects {
+	#projects-container {
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: space-around;
+		align-items: flex-start;
 		align-content: space-between;
-		width: 100%;
 		padding: 0;
 		margin: 0;
 	}
 
 	.project {
+		margin: auto;
+		min-width: 30%;
+		max-width: 45%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+
+.project {
 		margin: auto;
 		flex-basis: auto;
 		max-width: 33%;
