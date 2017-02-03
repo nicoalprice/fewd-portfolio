@@ -100,9 +100,13 @@ a {
 	background-color: azure;
 }
 
+#skills-container {
+	display: flex;
+	flex-direction: column;
+}
+
 .skill {
 	display: inline-block;
-	max-width: 700px;
 	background-color: white;
 	padding: 10px;
 	margin-bottom: 10px;
@@ -203,6 +207,7 @@ a {
 		width: 50%;
 	}
 
+	#skills-container,
 	#projects-container {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -213,18 +218,20 @@ a {
 		margin: 0;
 	}
 
+	.skill,
 	.project {
 		margin: auto;
-		min-width: 30%;
+		min-width: 26%;
 		max-width: 45%;
 	}
 }
 
 @media screen and (min-width: 1000px) {
 
-.project {
+	.skill,
+	.project {
 		margin: auto;
 		flex-basis: auto;
-		max-width: 33%;
+		max-width: 30%;
 	}
 }
