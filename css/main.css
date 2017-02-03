@@ -187,7 +187,11 @@ a {
 
 .social-media {
 	display: inline-block;
-	border: 1px solid orange;
+}
+
+.social-media img {
+	height: 30px;
+	margin: 10px 5px;
 }
 /* ----- MEDIA QUERIES ----- */
 
