@@ -2,6 +2,8 @@
 
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 li {
@@ -29,7 +31,9 @@ header {
 }
 
 .wrapper {
-	border: 5px solid aqua;
+	height: 100%;
+	position: relative;
+	bottom: -20px;
 }
 /* Navigation */
 
@@ -54,12 +58,13 @@ header {
 }
 
 #menu li {
-	background: lightblue;
+	background: lemonchiffon;
+	color:  #412c27;
 	font-size: 1.2em;
-	width: 90%;
+	width: 95%;
 	border-radius: 2px;
 	padding: 8px;
-	margin: 2px;
+	margin: 4px;
 	text-align: center;
 	align-self: center;
 }
@@ -138,6 +143,12 @@ a {
 	padding: 4px;
 }
 
+.divider-line {
+	color: #412c27;
+	width: 90%;
+	margin: 20px auto;
+}
+
 /* -- Projects ---*/
 
 #projects {
@@ -185,7 +196,7 @@ a {
 	background: pink;
 	display: inline-block;
 	border-radius: 4px;
-	padding: 4px;
+	padding: 5px;
 	margin: 2px;
 }
 
@@ -193,6 +204,7 @@ a {
 
 #contact {
 	background-color: lemonchiffon;
+	padding: 14px;
 }
 
 #contact-heading {
@@ -202,6 +214,7 @@ a {
 
 #contact p {
 	font-size: 1em;
+	margin: .5em;
 	text-align: center;
 }
 
@@ -233,6 +246,12 @@ a {
 		flex-direction: row;
 		height: auto;
 	}
+
+
+#menu li {
+	color: lemonchiffon;
+	background:  #412c27;
+}
 
 	#logo {
 		margin-right: auto;
@@ -270,6 +289,7 @@ a {
 
 	.project {
 		height: 450px;
+		margin-top: 20px;
 	}
 }
 
@@ -278,7 +298,12 @@ a {
 	.skill,
 	.project {
 		margin: auto;
-		flex-basis: auto;
 		max-width: 30%;
 	}
+
+	#contact-text {
+		width: 50%;
+		margin: auto;
+	}
+
 }
