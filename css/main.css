@@ -12,6 +12,7 @@ h1 {
 	font-size: 2em;
 	font-family: 'Open Sans', sans-serif;
 	color: #412c27;
+	padding: .5em 0 0 1em;
 }
 
 /* Mobile first design should start at 320px */
@@ -37,6 +38,13 @@ header {
 	display: flex;
 	flex-direction: column;
 	position: relative;
+}
+
+#hamburger img {
+	height: 30px;
+	position: absolute;
+	top: 14px;
+	right: 10px;
 }
 
 #menu {
@@ -72,9 +80,11 @@ a {
 .header-name {
 	font-family: 'Pacifico';
 	font-size: 2.5em;
-	color: #fee07e;
-	text-align: center;
+/*	color: #fee07e;*/
+	color: lemonchiffon;
+/*	text-align: center;*/
 	vertical-align: middle;
+	padding-left: 10px;
 	line-height: 60px;       /* the same as div height */
 	text-shadow: 1px 1px 2px #000, 0 0 0 #000, -1px -1px 2px #000;
 	opacity: 1;
@@ -97,7 +107,7 @@ a {
 /* --- Skills ---*/
 
 #skills {
-	background-color: azure;
+	background-color: white;
 }
 
 #skills-container {
@@ -131,7 +141,7 @@ a {
 /* -- Projects ---*/
 
 #projects {
-	background-color: lavender;
+	background-color: #fff;
 	width: 100%;
 }
 
@@ -149,7 +159,7 @@ a {
 	min-height: 100px;
 	min-width: 100px;
 	margin: auto;
-	padding: 10px;
+	padding: 20px;
 	margin-bottom: 10px;
 	background-color: white;
 }
@@ -185,6 +195,21 @@ a {
 	background-color: lemonchiffon;
 }
 
+#contact-heading {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#contact p {
+	font-size: 1em;
+	text-align: center;
+}
+
+#social-media-icons {
+	display: flex;
+	justify-content: center;
+}
+
 .social-media {
 	display: inline-block;
 }
@@ -193,6 +218,11 @@ a {
 	height: 30px;
 	margin: 10px 5px;
 }
+
+.social-media img:hover {
+	opacity: .8;
+}
+
 /* ----- MEDIA QUERIES ----- */
 
 @media screen and (min-width: 769px) {
@@ -201,10 +231,15 @@ a {
 	#menu {
 		display: flex;
 		flex-direction: row;
+		height: auto;
 	}
 
 	#logo {
 		margin-right: auto;
+	}
+
+	#hamburger {
+			display: none;
 	}
 
 	#bio {
@@ -227,6 +262,14 @@ a {
 		margin: auto;
 		min-width: 26%;
 		max-width: 45%;
+	}
+
+	.skill {
+		height: 350px;
+	}
+
+	.project {
+		height: 450px;
 	}
 }
 
