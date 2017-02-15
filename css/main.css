@@ -21,10 +21,9 @@ h1 {
 
 /* Mobile first design should start at 320px */
 
-
 header {
 	display: inline-block;
-	background: url('../img/lightbulb-cropped.jpg') no-repeat top center fixed;
+	background: url('../img/lightbulb-trial.jpg') no-repeat top center;
 	background-size: 100% auto cover;
 	width: 100%;
 	margin: 0;
@@ -108,6 +107,7 @@ a {
 	background-color: white;
 	border-radius: 10px;
 	padding: 20px;
+	margin: 10px;
 }
 
 #bio p {
@@ -266,29 +266,31 @@ a {
 	}
 
 	header {
-		background-size: contain;
-		min-height: 350px;
+		display: inline-block;
+		background-size: 100% auto;
+		min-height: 500px;
+		overflow: hidden;
 	}
 
 	.open {
-	align-self: center;
-	padding: 0;
-	width: 100%;
-	overflow: hidden;
-	height: 138px;
-}
+		align-self: center;
+		padding: 0;
+		width: 100%;
+		overflow: hidden;
+		height: 138px;
+	}
 
-.open li {
-	background: lemonchiffon;
-	color:  #42302c;
-	font-size: 1.2em;
-	width: 95%;
-	border-radius: 2px;
-	padding: 8px;
-	margin: 4px;
-	text-align: center;
-	align-self: center;
-}
+	.open li {
+		background: lemonchiffon;
+		color:  #42302c;
+		font-size: 1.2em;
+		width: 95%;
+		border-radius: 2px;
+		padding: 8px;
+		margin: 4px;
+		text-align: center;
+		align-self: center;
+	}
 
 	.menu li {
 		font-size: 1.2em;
@@ -315,6 +317,8 @@ a {
 	}
 
 	#bio {
+		margin: 40px;
+		padding: 20px;
 		width: 50%;
 	}
 
@@ -372,7 +376,6 @@ a {
 @media screen and (min-width: 1000px) {
 
 	header {
-		background-size: contain;
 		min-height: 700px;
 	}
 
