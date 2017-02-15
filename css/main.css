@@ -37,7 +37,7 @@ header {
 /* Navigation */
 
 #main-header,
-#menu {
+.menu {
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -54,13 +54,19 @@ header {
 	right: 10px;
 }
 
-#menu {
+.menu {
+	height: 0;
+}
+
+.open {
 	align-self: center;
 	padding: 0;
 	width: 100%;
+	overflow: hidden;
+	height: 138px;
 }
 
-#menu li {
+.open li {
 	background: lemonchiffon;
 	color:  #42302c;
 	font-size: 1.2em;
@@ -251,7 +257,7 @@ a {
 @media screen and (min-width: 769px) {
 
 	#main-header,
-	#menu {
+	.menu {
 		display: flex;
 		flex-direction: row;
 		height: auto;
@@ -264,14 +270,39 @@ a {
 		min-height: 350px;
 	}
 
+	.open {
+	align-self: center;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+	height: 138px;
+}
 
-	#menu li {
+.open li {
+	background: lemonchiffon;
+	color:  #42302c;
+	font-size: 1.2em;
+	width: 95%;
+	border-radius: 2px;
+	padding: 8px;
+	margin: 4px;
+	text-align: center;
+	align-self: center;
+}
+
+	.menu li {
+		font-size: 1.2em;
+		width: 95%;
+		padding: 8px;
+		margin: 4px;
+		text-align: center;
+		align-self: center;
 		color: lemonchiffon;
 		background:  #42302c;
 		border-radius: 0;
 	}
 
-	#menu a:visited {
+	.menu a:visited {
 		color: white;
 	}
 
@@ -280,7 +311,7 @@ a {
 	}
 
 	#hamburger {
-			display: none;
+		display: none;
 	}
 
 	#bio {

@@ -2,7 +2,9 @@
 
 /* Hamburger Menu */
 $("#hamburger").on("click", function(){
-	// If menu is closed, slide down
-	// If menu is open, slide up
-	$("#menu").slideToggle();
+	if ($(".menu").hasClass("open")) {
+		$(".menu").removeClass("open")
+	} else {
+		$(".menu").addClass("open")
+	}
 });
