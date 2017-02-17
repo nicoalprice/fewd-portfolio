@@ -105,7 +105,7 @@ a {
 #bio {
 	opacity: .8;
 	background-color: white;
-	border-radius: 10px;
+	border-radius: 8px;
 	padding: 20px;
 	margin: 10px;
 }
@@ -186,6 +186,7 @@ a {
 
 .project-title {
 	font-size: 1.2em;
+	margin-top: 8px;
 	padding: 4px;
 	font-weight: 600;
 }
@@ -194,20 +195,20 @@ a {
 	max-width: 100%;
 	margin: auto;
 	border-radius: 8px;
-	border: 16px solid black;
+	border: 18px solid black;
 }
 
 .project-description {
-	padding: 4px;
+	padding: 6px;
 }
 
 .project-skills {
-	background: #294313;
+	background: #42302c;
 	color: lemonchiffon;
 	display: inline-block;
 	border-radius: 4px;
 	padding: 5px;
-	margin: 2px;
+	margin: 5px 2px;
 }
 
 /* --- Footer --- */
@@ -254,7 +255,7 @@ a {
 
 /* ----- MEDIA QUERIES ----- */
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 760px) {
 
 	#main-header,
 	.menu {
@@ -268,7 +269,7 @@ a {
 	header {
 		display: inline-block;
 		background-size: 100% auto;
-		min-height: 500px;
+		min-height: 400px;
 		overflow: hidden;
 	}
 
@@ -339,7 +340,8 @@ a {
 	.skill {
 		margin: auto;
 		min-width: 26%;
-		max-width: 45%;
+		max-width: 35%;
+		height: 240px;
 	}
 
 	.project {
@@ -348,7 +350,7 @@ a {
 		justify-content: space-around;
 		width: 90%;
 		margin: 0 5%;
-		height: 400px;
+		height: 300px;
 	}
 
 	.project-title {
@@ -367,16 +369,12 @@ a {
 		padding-bottom: 10px;
 		width: 90%;
 	}
-
-	.skill {
-		height: 240px;
-	}
 }
 
 @media screen and (min-width: 1000px) {
 
 	header {
-		min-height: 700px;
+		min-height: 500px;
 	}
 
 	#bio {
@@ -398,4 +396,16 @@ a {
 		margin: auto;
 	}
 
+}
+
+@media screen and (min-width: 1400px) {
+
+	header {
+		min-height: 700px;
+	}
+
+	.skill {
+		margin: auto;
+		max-width: 25%;
+	}
 }
