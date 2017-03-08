@@ -253,6 +253,24 @@ a {
 	opacity: .8;
 }
 
+/* ------ OVERLAY ----- */
+
+#overlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: green;
+	z-index: 100;
+	display: none;
+}
+
+#overlay-image {
+	width: 60%;
+	margin: 40%;
+}
+
 /* ----- MEDIA QUERIES ----- */
 
 @media screen and (min-width: 760px) {
